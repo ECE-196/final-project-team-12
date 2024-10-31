@@ -1680,7 +1680,7 @@
 			)
 		)
 		(property "Footprint" "vreg:SOT563_DIO"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8b34adc2-5cb2-494a-b51e-74b88f4e0715")
@@ -1692,7 +1692,7 @@
 			)
 		)
 		(property "Datasheet" "AP62150Z6-7"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ddc0df02-d4b2-4a1b-b69a-7cb71e5be886")
@@ -1704,7 +1704,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "85d54581-c730-4fe6-8f92-4f57e7ea4111")
@@ -2417,7 +2417,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at 0 1.5 360)
+			(at 0 1.5 0)
 			(layer "F.SilkS")
 			(uuid "ae47b406-be35-49b8-8ee7-de51a1841729")
 			(effects
@@ -2428,7 +2428,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.5 360)
+			(at 0 1.5 0)
 			(layer "F.Fab")
 			(uuid "d3280b07-9d79-47dd-b422-3fa358cba906")
 			(effects
@@ -2583,7 +2583,7 @@
 			(uuid "461e5e18-9d25-47cd-a81a-a6b247105f5b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ba9ed6ea-bdf7-456a-8b2e-c023fa1b1fa5")
 			(effects
@@ -5171,7 +5171,7 @@
 		(descr "Inductor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "inductor")
 		(property "Reference" "L1"
-			(at 0 -1.5 360)
+			(at 0 -1.5 0)
 			(layer "F.SilkS")
 			(uuid "44bfc840-f56c-414a-8177-70003d1a0afa")
 			(effects
@@ -5182,7 +5182,7 @@
 			)
 		)
 		(property "Value" "3.3uH"
-			(at 0 1.55 360)
+			(at 0 1.55 0)
 			(layer "F.Fab")
 			(uuid "40174791-1a89-4986-b3d2-e7ccce6e2f3b")
 			(effects
@@ -5337,7 +5337,7 @@
 			(uuid "1f526e5f-1d51-4c50-b421-945fc6fd0f0e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "de8ce85d-446c-4a0b-8e9c-9546d1a4c1c6")
 			(effects
@@ -5610,12 +5610,36 @@
 		(uuid "5b8e611b-1a0e-40c9-bd2f-aa7fbf1d8f7b")
 	)
 	(segment
+		(start 121.5 102.92)
+		(end 119.7 101.12)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "8859a393-70e0-4b43-aff4-b831d450e4c9")
+	)
+	(segment
 		(start 117.8 90.2625)
 		(end 119.0375 90.2625)
 		(width 1)
 		(layer "F.Cu")
 		(net 1)
 		(uuid "9e3afb08-56b4-474e-bdd0-c522ce5c73a2")
+	)
+	(segment
+		(start 114 101.12)
+		(end 112.2 102.92)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "a5b0e206-2682-4cf9-965f-42c9d4d47001")
+	)
+	(segment
+		(start 119.7 101.12)
+		(end 114 101.12)
+		(width 1.5)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "d80156d4-fcc4-45c0-abbd-de68e0ffc76d")
 	)
 	(via
 		(at 113.25 94.85)
