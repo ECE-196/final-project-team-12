@@ -1,0 +1,14 @@
+Reference,Value,Datasheet,Footprint,Qty,DNP,Digikey part #
+C1,22uF,~,Capacitor_SMD:C_0805_2012Metric,1,,1276-2909-1-ND 
+C2,100nF,~,Capacitor_SMD:C_0805_2012Metric,1,,1276-1782-1-ND 
+C3,10uF,~,Capacitor_SMD:C_0805_2012Metric,1,,1276-1096-1-ND 
+"J1,J2",Conn_01x15_Socket,~,Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical,2,,S7013-ND
+J3,LiDAR_IN,~,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,1,,S7001-ND
+"J4,J5,J6,J7,J12",Conn_01x01_Pin,~,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,5,,A26540-ND
+"J8,J9,J10",Conn_01x03_Pin,~,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,3,,732-5316-ND
+J11,Conn_01x05_Pin,~,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,1,,732-5318-ND
+L1,3.3uH,~,Inductor_SMD:L_0805_2012Metric,1,,2035-1251-1-ND
+R1,52.3k,~,Resistor_SMD:R_0805_2012Metric,1,,541-52.3KCCT-ND
+R2,10k,~,Resistor_SMD:R_0805_2012Metric,1,,RR12P10.0KDCT-ND
+SW1,sw1,,09.03201.02,1,,1948-1086-ND
+U1,AP62150Z6-7,AP62150Z6-7,KiCADv6:SOT563_DIO,1,,31-AP62150Z6-7CT-ND
