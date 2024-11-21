@@ -1,2 +1,5 @@
+11/10/24
+Tested wireless sending 47 elements array from one ESP32 to another ESP32 (The Screen). The lidar generates 47 hexadecimal bytes representing distance and angle. So this essentially means I am now able to send all lidar data to the screen.
+
 11/18/24
-	Figured out how to display on screen using lvgl and ESP_Display Module, will be working on screen buffer. A screen buffer allows it to update data and refresh it in a high fps.
+Figured out how to display on screen using lvgl and ESP_Display Module, will be working on screen buffer. A screen buffer allows it to update data and refresh it in a high fps.
