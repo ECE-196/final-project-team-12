@@ -1,7 +1,7 @@
 ![](logo-ucsdjsoeece-white.png)
 ---
 ## Tutorial Parking Assistant Device
-Last update: 11/20/2024
+Last update: 11/27/2024
 
 Authors:
   - Clevant Yang
