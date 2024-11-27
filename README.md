@@ -44,17 +44,25 @@ Due to people are changing the ways to use their library or even change the synt
 
 Since the writer was annoyed by different tutorials using different version of library, different configuration, different IDE, different...This tutorial doesn't plan to throw a bunch of documentations and libraries on you without explaining what's the meaning of each line of code. I will explain what the code means to my greatest effort, giving you an overview to how the ESP32 wireless, display, and lidar work. I then will reference documentations and libraries I use for your interest if you want to look for more.
 
-## Getting Started
+## Get Started
+
+## Screen
+#### SPI Protocal
+On the button of the screen, you can see "GND", "VCC", "SCK", "SDA", "RES", "DC", "CS" labeled on pins, they are used for SPI protocal communications between our master (Screen), and slave(s) (Sensors, screen, etc.) . In our case, ESP32 communicating with the screen, learn more [here][SPI Wiki Link]. 
+
+"GND" and "VCC" are for powering, refering to **power ground** and **power input**. "SCK" is **serial clock**. "SDA" is **Serial Data**, **MOSI (Master Out Slave In) or MISO (Master In Slave Out)**. "RES" is **Reset**. "DC" is **Data Command**. "CS" is **Chip Select**. 
+
+In SPI, master communicates with slaves through **bus**. Bus is like highway between the master and slaves. There are four buses, 
+
 
 #### Circuit Python
-#####
 I assume you haved built the VU Meter using Circuit Python as [this instruction][Circuit Python Link], so you should have it installed and set up for the ESP32 you built earlier in class. You know how to let "CIRCUITPY" drive appear on your computer. Go to the drive, you can see there is a "lib" folder, this is the folder storing all the libraries we will use for Circuit Python.
 
 To let the screen work, we need some libraries. Download Circuit Python libraries [here][Library Link], under "**Bundle for Version 9.x**", there should be a download link looks something like "**adafruit-circuitpython-bundle-9.x-mpy-20241127.zip**". Download it to somewhere you know on your computer. 
 
-Unzip "**adafruit-circuitpython-bundle-9.x-mpy-xxxxxxxx.zip**", open the folder , there should be some folders and files, one of them is "lib" folder. This folder as its name suggests contains all the Circuit Python libraries, but we are not using all of them. Open the folder, find "**adafruit_displayio_ssd1306.mpy**", copy it to the "lib" folder in CIRCUITPY drive. You may find this is the library for SSD1306, but we are using SSD1309. The fact is for our particular SSD1309, they can work just like SSD1306. This is all the library we need for the screen, other libraries come with the Circuit Python so you don't need to import externally.
+Unzip "**adafruit-circuitpython-bundle-9.x-mpy-xxxxxxxx.zip**", open the folder , there should be some folders and files, one of them is "lib" folder. The "lib" folder as its name suggests contains all the Circuit Python libraries, but we are not using all of them. Open the folder, find "**adafruit_displayio_ssd1306.mpy**", copy it to the "lib" folder in CIRCUITPY drive. You may find this is the library for SSD1306, but we are using SSD1309. The fact is for our particular SSD1309 can work just like SSD1306. This is all the library we need for the screen, other libraries come with the Circuit Python so you don't need to import externally.
 
-The screen is using SPI protocal to communicate with the screen.
+
 
 #### Arduino IDE
 First thing first. There are some changes and library needed. Open Arduino IDE, go to File->prefrences->Additional boards manager URLs, add this link, like this
@@ -145,3 +153,4 @@ List any sources you used, documentation, helpful examples, similar projects etc
 [Circuit Python Link]: https://ece-196.github.io/docs/assignments/vu-meter/firmware/
 [OLED Screen Link]: https://www.amazon.com/Teyleten-Robot-Display-SSD1309-Interface/dp/B09LND6QJ1?crid=2NS440QNA8L2N&dib=eyJ2IjoiMSJ9.l7V7zqGnfz5tpb12Y4vhPfd6kcDo9Gy_9YxzPdgyHeA-stbcUC53jzvRBqjo9Q9JBe1BkHeOFJ04y90IgaGZ3agsD5l1un_QmPUPOsPJj8ZE-nJoF3GeJ2r58FPdj7uPpWhgW64wHKHulnyFKdYspzRMkfGyqlLCzbuZkltIeoFwT9sNAwJNMJET8-38BXq6n1nJkHzrwQzCMwJJcBCXR966NtDY9C7Sn5hIxQ45Z1M.BqTYKnKZpQOdVkGlEjtYdvPTKl41DxKrgW7eLwadZLw&dib_tag=se&keywords=2.42+inch+display&qid=1731571123&sprefix=2.42+inch+displa%2Caps%2C156&sr=8-1#cr-media-gallery-popover_1732676448576
 [Library Link]: https://circuitpython.org/libraries
+[SPI Wiki Link]: https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
