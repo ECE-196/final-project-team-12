@@ -47,11 +47,14 @@ Since the writer was annoyed by different tutorials using different version of l
 ## Getting Started
 
 #### Circuit Python
+#####
 I assume you haved built the VU Meter using Circuit Python as [this instruction][Circuit Python Link], so you should have it installed and set up for the ESP32 you built earlier in class. You know how to let "CIRCUITPY" drive appear on your computer. Go to the drive, you can see there is a "lib" folder, this is the folder storing all the libraries we will use for Circuit Python.
 
-To let the screen work, we need some libraries. Download Circuit Python libraries [here][Library Link], under "Bundle for Version 9.x", there should be a download link looks something like "adafruit-circuitpython-bundle-9.x-mpy-20241127.zip". Download it to somewhere you know on your computer. Find "adafruit_ssd1306.mpy", "adafruit_displayio_ssd1306.mpy", "adafruit_framebuf.mpy", 
+To let the screen work, we need some libraries. Download Circuit Python libraries [here][Library Link], under "**Bundle for Version 9.x**", there should be a download link looks something like "**adafruit-circuitpython-bundle-9.x-mpy-20241127.zip**". Download it to somewhere you know on your computer. 
 
-Unzip "adafruit-circuitpython-bundle-9.x-mpy-xxxxxxxx.zip", open the folder , there should be some folders and files, one of them is "lib" folder. This folder as its name suggests contains all the Circuit Python libraries, but we are not using all of them. Open the folder
+Unzip "**adafruit-circuitpython-bundle-9.x-mpy-xxxxxxxx.zip**", open the folder , there should be some folders and files, one of them is "lib" folder. This folder as its name suggests contains all the Circuit Python libraries, but we are not using all of them. Open the folder, find "**adafruit_displayio_ssd1306.mpy**", copy it to the "lib" folder in CIRCUITPY drive. You may find this is the library for SSD1306, but we are using SSD1309. The fact is for our particular SSD1309, they can work just like SSD1306. This is all the library we need for the screen, other libraries come with the Circuit Python so you don't need to import externally.
+
+The screen is using SPI protocal to communicate with the screen.
 
 #### Arduino IDE
 First thing first. There are some changes and library needed. Open Arduino IDE, go to File->prefrences->Additional boards manager URLs, add this link, like this
