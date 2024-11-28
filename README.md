@@ -48,11 +48,14 @@ Since the writer was annoyed by different tutorials using different version of l
 
 ## Screen
 #### SPI Protocal
-On the button of the screen, you can see "GND", "VCC", "SCK", "SDA", "RES", "DC", "CS" labeled on pins, they are used for SPI protocal communications between our master (Screen), and slave(s) (Sensors, screen, etc.) . In our case, ESP32 communicating with the screen, learn more [here][SPI Wiki Link]. 
+On the button of the screen, you can see "GND", "VCC", "SCK", "SDA", "RES", "DC", "CS" labeled on pins, they are used for SPI protocal communications. [here][SPI Wiki Link]. 
 
-"GND" and "VCC" are for powering, refering to **power ground** and **power input**. "SCK" is **serial clock**. "SDA" is **Serial Data**, **MOSI (Master Out Slave In) or MISO (Master In Slave Out)**. "RES" is **Reset**. "DC" is **Data Command**. "CS" is **Chip Select**. 
+In SPI world, master tells slaves what to do. In our case, the master is the ESP32, slave is the screen.  They communicate through **bus**. Bus is like highway between the master and slaves. There are four type of buses in general, **MOSI** (Master Out Slave In), **MISO** (Master In Slave Out), **SCLK** (Serial Clock), and "CS" (Chip Select). **MOSI** is 
 
-In SPI, master communicates with slaves through **bus**. Bus is like highway between the master and slaves. There are four buses, 
+(Back to observation, in our specific case)"GND" and "VCC" are for powering, refering to **power ground** and **power input**. "SCK" is **serial clock**. "SDA" is **Serial Data**, **MOSI (Master Out Slave In) or MISO (Master In Slave Out)**. "RES" is **Reset**. "DC" is **Data Command**. "CS" is **Chip Select**. 
+
+
+ 
 
 
 #### Circuit Python
